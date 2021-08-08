@@ -1,0 +1,11 @@
+mlx90632_extended_meas.c:54:16:mlx90632_read_temp_ambient_raw_extended	24	static
+mlx90632_extended_meas.c:83:16:mlx90632_read_temp_object_raw_extended	32	static
+mlx90632_extended_meas.c:133:9:mlx90632_read_temp_raw_extended	40	static
+mlx90632_extended_meas.c:166:9:mlx90632_read_temp_raw_extended_burst	32	static
+mlx90632_extended_meas.c:186:8:mlx90632_preprocess_temp_ambient_extended	40	static
+mlx90632_extended_meas.c:196:8:mlx90632_preprocess_temp_object_extended	40	static
+mlx90632_extended_meas.c:207:8:mlx90632_calc_temp_ambient_extended	72	static
+mlx90632_extended_meas.c:244:15:mlx90632_calc_temp_object_iteration_extended	96	static
+mlx90632_extended_meas.c:267:8:mlx90632_calc_temp_object_extended	136	static
+mlx90632_extended_meas.c:299:9:mlx90632_set_meas_type	24	static
+mlx90632_extended_meas.c:341:9:mlx90632_get_meas_type	16	static
