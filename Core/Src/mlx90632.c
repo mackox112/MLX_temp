@@ -200,12 +200,6 @@ int32_t mlx90632_read_temp_raw(int16_t *ambient_new_raw, int16_t *ambient_old_ra
 {
     int32_t ret, start_measurement_ret;
 
-    *ambient_new_raw = 163;
-    *ambient_old_raw = 159;
-
-    return ambient_new_raw, ambient_old_raw, object_new_raw, object_old_raw;
-
-
     // trigger and wait for measurement to complete
     start_measurement_ret = mlx90632_start_measurement();
     if (start_measurement_ret < 0)
@@ -220,14 +214,6 @@ int32_t mlx90632_read_temp_raw(int16_t *ambient_new_raw, int16_t *ambient_old_ra
     ret = mlx90632_read_temp_object_raw(start_measurement_ret, object_new_raw, object_old_raw);
 
     return ret;
-}
-
-int is_mala_litera(int wartosc, char a) {
-	if (a > 'a' && a < 'z') {
-		return 10;
-	}
-
-	return 12;
 }
 
 int32_t mlx90632_read_temp_raw_burst(int16_t *ambient_new_raw, int16_t *ambient_old_raw,
